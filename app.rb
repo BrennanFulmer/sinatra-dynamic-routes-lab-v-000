@@ -11,7 +11,7 @@ class App < Sinatra::Base
   get '/square/:number' do
     @input_num = params[:number]
     
-    "#{@input_num.to_i * @input_num.to_i}"
+    "#{@input_num.to_i ** 2}"
   end
 
   get '/say/:number/:phrase' do
